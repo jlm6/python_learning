@@ -8,7 +8,7 @@ dict_info= {}
 bid_price = 0
 winner = ""
 
-def list_create(target_person, target_bid):
+def dic_create(target_person, target_bid):
   dict_info[target_person] = target_bid
 
 while not end_game:
@@ -16,8 +16,8 @@ while not end_game:
   print("Welcome to the secret auction program!")
   person = input("What is your name?!: ")
   bid = int(input("What is your bid price!? $"))
-
-  list_create(person, bid)
+  
+  dict_create(person, bid)
   reply = input("Are there any other bidders!?, type yes or no \n").lower()
   if reply == 'yes':
     clear()
