@@ -27,7 +27,7 @@ def checkduplicate(phonebook_dict, username, phone_number):
 
 def getuserinput():
     try:
-        username = str(input ( "What is the name of the new contact? " ))
+        username = str(input ( "What is the new person name? " ))
         phone_number = int ( input ( f"What is {username}'s phone number? " ) )
 
     except ValueError:
@@ -45,6 +45,7 @@ while check_flag:
         getuserinput ()
     else:
         getuserinput ()
+
     response = input("Do you want to add more contact (A) or check the phonebook (C)? ")
     if response.lower() == 'c':
         print("Here is the latest phonebook list")
