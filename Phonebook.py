@@ -39,7 +39,12 @@ def getuserinput():
 
 
 while check_flag:
-    getuserinput()
+    response = input ( "Do you want to check the phonebook (Y/N)? " ).lower()
+    if response == 'y':
+        showphonebook()
+        getuserinput ()
+    else:
+        getuserinput ()
     response = input("Do you want to add more contact (A) or check the phonebook (C)? ")
     if response.lower() == 'c':
         print("Here is the latest phonebook list")
